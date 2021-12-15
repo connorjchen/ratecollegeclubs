@@ -1,0 +1,643 @@
+html{
+  /* 16 px (default font) * 62.5% = 10px = 1 rem 
+  font-size: 62.5%;  */
+  font-size: 93.75%;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Corresponds to root id in index.html in frontend > public */
+#root{
+  height: 100%;
+}
+
+/* Layout */
+.grid-container{
+  display: grid;
+  grid-template-areas:'header' 'main' 'footer';
+  grid-template-columns: 1fr; 
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+
+  position: relative;
+}
+header{
+  grid-area: header; /* Connects this to grid container ^ */
+  background-color: #b31b1b;
+}
+main{
+  grid-area: main;
+  padding: 1rem;
+  min-height: 58rem;
+}
+footer{
+  grid-area: footer;
+  background-color: #b31b1b;
+  color: #ffffff;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footerComponent{
+  height: 5rem;
+  background-color: #b31b1b;
+  color: #ffffff;
+}
+/* Common */
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2{
+  font-size: 1.6rem;
+  /* padding: 1rem 0; */
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: #b31b1b;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li{
+  margin-top: 1rem;
+}
+
+input,
+select, 
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button{
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+input:hover,
+select:hover, 
+button:hover{
+  border: 0.1rem #404040 solid;
+}
+button.primary{
+  background-color: #f8f8f8;
+}
+button.block{
+  width: 100%;
+  margin: 1rem;
+}
+button.sike{
+  border: 0.1rem #b31b1b solid;
+  cursor: default;
+}
+button.write{
+  background-color: #b31b1b;
+  color: white;
+  width: 22.4rem;
+}
+button.admin{
+  background-color: #b31b1b;
+  color: white;
+  width: 10rem;
+}
+button.post{
+  background-color: #b31b1b;
+  color: white;
+  width: 23rem;
+}
+
+
+
+/* Header */
+header a{
+  color: #ffffff;
+  padding: 1rem;
+}
+a.brand{
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center{
+  justify-content: center;
+}
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 0 1 23rem;
+}
+.col-2{
+  flex: 1 1 75rem;
+}
+
+/* Images */
+img{
+  border-radius: 0.5rem;
+}
+img.small{
+  width: 22.4rem;
+  height: 15rem;
+  object-fit: cover;
+}
+img.smallish{
+  width: 19rem;
+  height: 15rem;
+  object-fit: cover;
+}
+img.medium{
+  width: 29rem;
+  height: 19rem;
+  object-fit: cover;
+}
+img.large{
+  width: 100%;
+}
+
+/* Card */
+.card{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  margin-top: 0;
+}
+.card-hover-border:hover{
+    border: 0.1rem #404040 solid;
+}
+.school-card{
+  border-radius: 0.5rem;
+  margin: 1rem;
+  margin-top: 0;
+}
+.card-body{
+  padding: 1rem;
+}
+.card-body > *{
+  margin: 0rem 0rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* Rating and Difficulty */
+.rating span{
+  color: #f0c040;
+  margin: 0.1rem;
+}
+.rating span:nth-child(6){
+  color: black;
+}
+.difficulty{
+  margin-bottom: -1.5rem;
+}
+.difficulty p{
+  margin-top: -1.6rem;
+  margin-left: 2rem;
+  color: black;
+}
+.font-family-override{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Alert */
+.loading{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.success{
+  color: #20a020;
+}
+.danger{
+  color: #a02020;
+}
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+.alert-info{
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alert-danger{
+  color: #a02020;
+  background-color: #ffe0e0e0;
+}
+
+/* Form */
+.form{
+  max-width: 50rem;
+  /* makes center align */
+  margin: 0 auto;
+}
+.form > div{
+  display: flex;
+  /* column bc show label at top and input box at bottom for signin page */
+  flex-direction: column;
+  margin: 1rem;
+}
+.form label{
+  /* 1rem vert and 0 horizontally */
+  margin: 1rem 0;
+  /* block because put label in new line */
+  display: block;
+}
+.form-wrapper > div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Left side bar of SchoolScreen */
+.school-info > *{
+  margin: 0rem 0rem;
+  max-width: 22.4rem;
+}
+.location{
+  font-size: 1.3rem;
+}
+.school-name{
+  font-size: 2.5rem;
+}
+.spacer{
+  margin-top: 0.4rem;
+}
+.filter-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: normal;
+  margin-bottom: -2rem;
+}
+.noClub{
+  color: #b31b1b;
+  font-weight: bold;
+}
+
+/* Left side bar of ClubScreen */
+.link-back{
+  color: black;
+  font-size: 1.5rem;
+}
+.recommend-bar-container{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 16rem;
+  height: 0rem;
+  position: relative;
+}
+.recommend-bar{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #b31b1b;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 0rem;
+  position: absolute;
+  left: -0.1rem;
+  top: -1.1rem;
+  transition: width 5s ease-out;
+  animation: bar-load 1s ease-out;
+}
+@keyframes bar-load {
+  0% {
+    width: 0;
+  }
+}
+.empty-recommend-bar{
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 0rem;
+  position: absolute;
+  left: -0.1rem;
+  top: -1.1rem;
+}
+.recommend-percent{
+  position: relative;
+  left: 17.5rem;
+  top: -.9rem;
+  width: fit-content;
+}
+
+/* Review List */
+.left > *{
+  text-align: left;
+}
+.small-text{
+  font-size: 1rem;
+}
+.smallish-text{
+  font-size: 1.3rem;
+}
+.fa-thumbs-up{
+  color: rgb(0, 140, 128);
+}
+.fa-thumbs-down{
+  color: #b31b1b;
+}
+.reviewButtonRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewButtonRow.top{
+  align-items: flex-start;
+}
+.flagCSS{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.flagCSS:hover{
+  opacity: 1;
+}
+
+/* Review Form */
+.select__control.css-yk16xz-control{
+  border: 0.1rem #a4a4a4 solid;
+  width: 22rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+.css-1pahdxg-control{
+  width: 22rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px #b31b1b !important;
+  border-color: #b31b1b !important;
+}
+.css-1pahdxg-control:hover{
+  border-color: #b31b1b !important;
+}
+/* .css-2613qy-menu{
+  color: #b31b1b !important;
+  background-color: #b31b1b !important;
+  border-color: #b31b1b !important;
+} */
+.reviewButtonRow.reviewTop{
+  flex-direction: row;
+}
+.halfRowInputs{
+  width: 19.8rem;
+}
+
+input[type=checkbox].with-font {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    cursor: pointer;
+}
+    
+input[type=checkbox].with-font ~ label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    letter-spacing: 10px;
+    font-size: 1.2em;
+    color: #535353;
+    width: 1.4em;
+    cursor: pointer;
+}
+
+input[type=checkbox].with-font ~ label:before {        
+    content: "\f087";
+    cursor: pointer;
+}
+input[type=checkbox].with-font:checked ~ label:before {
+    content: "\f164";        
+    color: rgb(0, 140, 128);
+    cursor: default;
+}
+
+input[type=radio].with-font {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+input[type=radio].with-font ~ label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  letter-spacing: 10px;
+  font-size: 1.2em;
+  color: #535353;
+  width: 1.4em;
+}
+input[type=radio].with-font ~ label:before {        
+  content: "\f088";
+  cursor: pointer;
+}
+input[type=radio].with-font:checked ~ label:before {
+  content: "\f165";        
+  color: #b31b1b;
+  cursor: default;
+}
+
+input[type=checkbox].second-with-font {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+  
+input[type=checkbox].second-with-font ~ label:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  letter-spacing: 10px;
+  font-size: 1.2em;
+  color: #535353;
+  width: 1.4em;
+}
+
+input[type=checkbox].second-with-font ~ label:after {        
+  content: "\f096";
+  margin-left: 1rem;
+  cursor: pointer;
+}
+input[type=checkbox].second-with-font:checked ~ label:after {
+  content: "\f046";
+  margin-left: 1rem;
+  color: rgb(0, 140, 128);
+}
+.MuiSlider-root{
+  width: 20rem !important;
+  color: #b31b1b !important;
+}
+.MuiOutlinedInput-notchedOutline{
+  border-radius: .5rem !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border: 0.15rem #404040 solid !important;
+  border-radius: .5rem;
+}
+
+/* AutoCompleteText */
+.AutoCompleteTextClass{
+  width: 40rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+}
+.AutoCompleteTextClassContent{
+  max-height: 10rem;
+  overflow-y: scroll;
+}
+.AutoCompleteTextClass input{
+  width: 100%;
+  border: none !important;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+.AutoCompleteTextClass input:focus{
+  outline: none !important;
+}
+.AutoCompleteTextClass li {
+  cursor: pointer;
+  margin-top: 0;
+}
+.AutoCompleteTextClass li:hover {
+  text-decoration: underline;
+}
+.background0{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('libraryBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background1{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('buildingBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background2{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('booksBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background3{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('gradBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background4{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('friendsBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background5{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('library2Background.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+.background6{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('workBackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  margin: -6rem -1rem -1rem -1rem;
+  z-index: 2;
+}
+
+/* Dropdown */
+.dropdown input{
+  width: 100%;
+  border: none !important;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+.dropdown input:focus{
+  outline: none !important;
+}
+.dropdown li {
+  cursor: pointer;
+  margin-top: 0;
+}
+.dropdown li:hover {
+  text-decoration: underline;
+}
+.dropdown{
+  position: absolute;
+  right: 0;
+  width: 20rem;
+  display: block;
+  background: white;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+}
+.dropdown-content{
+  display: block;
+  right: 0;
+  min-width: 18rem;
+  z-index: 1;
+  background-color: white;
+  margin: 0;
+  margin-top: -.4rem;
+  border-radius: 0.5rem;
+  max-height: 10rem;
+  overflow-y: scroll;
+}

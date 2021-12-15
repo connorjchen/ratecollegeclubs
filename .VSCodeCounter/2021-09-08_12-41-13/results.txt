@@ -1,0 +1,100 @@
+Date : 2021-09-08 12:41:13
+Directory : c:\Coding\ratecollegeclubs
+Total : 61 files,  25978 codes, 354 comments, 500 blanks, all 26832 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          5 |     20,056 |          0 |          5 |     20,061 |
+| JavaScript |         53 |      5,315 |        304 |        464 |      6,083 |
+| CSS        |          1 |        586 |         27 |         27 |        640 |
+| HTML       |          1 |         20 |         23 |          3 |         46 |
+| Markdown   |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         61 |     25,978 |        354 |        500 |     26,832 |
+| backend                                                                      |         10 |        408 |        160 |         98 |        666 |
+| backend\models                                                               |          4 |         65 |          4 |         12 |         81 |
+| backend\routers                                                              |          4 |        283 |         18 |         72 |        373 |
+| frontend                                                                     |         47 |     22,305 |        194 |        398 |     22,897 |
+| frontend\public                                                              |          2 |         45 |         23 |          4 |         72 |
+| frontend\src                                                                 |         43 |      5,470 |        171 |        392 |      6,033 |
+| frontend\src\actions                                                         |          4 |        361 |          0 |         25 |        386 |
+| frontend\src\components                                                      |         18 |      1,009 |         35 |        140 |      1,184 |
+| frontend\src\constants                                                       |          4 |         72 |          0 |         20 |         92 |
+| frontend\src\reducers                                                        |          4 |        326 |          0 |         27 |        353 |
+| frontend\src\screens                                                         |          8 |      3,030 |        106 |        140 |      3,276 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                     | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Coding\ratecollegeclubs\.eslintrc.cjs                                     | JavaScript |         23 |          0 |          1 |         24 |
+| c:\Coding\ratecollegeclubs\README.md                                         | Markdown   |          1 |          0 |          1 |          2 |
+| c:\Coding\ratecollegeclubs\backend\data.js                                   | JavaScript |         28 |        135 |          2 |        165 |
+| c:\Coding\ratecollegeclubs\backend\models\clubModel.js                       | JavaScript |         17 |          1 |          3 |         21 |
+| c:\Coding\ratecollegeclubs\backend\models\interviewModel.js                  | JavaScript |         15 |          1 |          3 |         19 |
+| c:\Coding\ratecollegeclubs\backend\models\reviewModel.js                     | JavaScript |         18 |          1 |          3 |         22 |
+| c:\Coding\ratecollegeclubs\backend\models\schoolModel.js                     | JavaScript |         15 |          1 |          3 |         19 |
+| c:\Coding\ratecollegeclubs\backend\routers\clubRouter.js                     | JavaScript |         77 |          1 |         19 |         97 |
+| c:\Coding\ratecollegeclubs\backend\routers\interviewRouter.js                | JavaScript |         63 |          5 |         18 |         86 |
+| c:\Coding\ratecollegeclubs\backend\routers\reviewRouter.js                   | JavaScript |         82 |          5 |         21 |        108 |
+| c:\Coding\ratecollegeclubs\backend\routers\schoolRouter.js                   | JavaScript |         61 |          7 |         14 |         82 |
+| c:\Coding\ratecollegeclubs\backend\server.js                                 | JavaScript |         32 |          3 |         12 |         47 |
+| c:\Coding\ratecollegeclubs\frontend\package-lock.json                        | JSON       |     16,741 |          0 |          1 |     16,742 |
+| c:\Coding\ratecollegeclubs\frontend\package.json                             | JSON       |         49 |          0 |          1 |         50 |
+| c:\Coding\ratecollegeclubs\frontend\public\index.html                        | HTML       |         20 |         23 |          3 |         46 |
+| c:\Coding\ratecollegeclubs\frontend\public\manifest.json                     | JSON       |         25 |          0 |          1 |         26 |
+| c:\Coding\ratecollegeclubs\frontend\src\App.js                               | JavaScript |         35 |          0 |          6 |         41 |
+| c:\Coding\ratecollegeclubs\frontend\src\actions\clubActions.js               | JavaScript |         89 |          0 |          6 |         95 |
+| c:\Coding\ratecollegeclubs\frontend\src\actions\interviewActions.js          | JavaScript |         92 |          0 |          6 |         98 |
+| c:\Coding\ratecollegeclubs\frontend\src\actions\reviewActions.js             | JavaScript |         92 |          0 |          7 |         99 |
+| c:\Coding\ratecollegeclubs\frontend\src\actions\schoolActions.js             | JavaScript |         88 |          0 |          6 |         94 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\AdminClub.js              | JavaScript |         56 |          0 |          6 |         62 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\AdminInterview.js         | JavaScript |         61 |          0 |          8 |         69 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\AdminReview.js            | JavaScript |         70 |          0 |          7 |         77 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\AdminSchool.js            | JavaScript |         44 |          0 |          6 |         50 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\AutoCompleteText.js       | JavaScript |        102 |          6 |         12 |        120 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Club.js                   | JavaScript |         41 |          1 |          8 |         50 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Difficulty.js             | JavaScript |         26 |          0 |          3 |         29 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Footer.js                 | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Header.js                 | JavaScript |         46 |          3 |          7 |         56 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\HeaderAutoCompleteText.js | JavaScript |        102 |          5 |         14 |        121 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Interview.js              | JavaScript |         50 |          0 |          8 |         58 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\LoadingBox.js             | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\MessageBox.js             | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Pagination.js             | JavaScript |        210 |          1 |         28 |        239 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Rating.js                 | JavaScript |         16 |          0 |          3 |         19 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\Review.js                 | JavaScript |        111 |          1 |         15 |        127 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\School.js                 | JavaScript |         41 |         18 |          7 |         66 |
+| c:\Coding\ratecollegeclubs\frontend\src\components\SearchBar.js              | JavaScript |         11 |          0 |          2 |         13 |
+| c:\Coding\ratecollegeclubs\frontend\src\constants\clubConstants.js           | JavaScript |         18 |          0 |          5 |         23 |
+| c:\Coding\ratecollegeclubs\frontend\src\constants\interviewConstants.js      | JavaScript |         18 |          0 |          5 |         23 |
+| c:\Coding\ratecollegeclubs\frontend\src\constants\reviewConstants.js         | JavaScript |         18 |          0 |          5 |         23 |
+| c:\Coding\ratecollegeclubs\frontend\src\constants\schoolConstants.js         | JavaScript |         18 |          0 |          5 |         23 |
+| c:\Coding\ratecollegeclubs\frontend\src\index.css                            | CSS        |        586 |         27 |         27 |        640 |
+| c:\Coding\ratecollegeclubs\frontend\src\index.js                             | JavaScript |         16 |          3 |          3 |         22 |
+| c:\Coding\ratecollegeclubs\frontend\src\reducers\clubReducers.js             | JavaScript |         90 |          0 |          7 |         97 |
+| c:\Coding\ratecollegeclubs\frontend\src\reducers\interviewReducers.js        | JavaScript |         79 |          0 |          7 |         86 |
+| c:\Coding\ratecollegeclubs\frontend\src\reducers\reviewReducers.js           | JavaScript |         79 |          0 |          7 |         86 |
+| c:\Coding\ratecollegeclubs\frontend\src\reducers\schoolReducers.js           | JavaScript |         78 |          0 |          6 |         84 |
+| c:\Coding\ratecollegeclubs\frontend\src\reportWebVitals.js                   | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\AdminScreen.js               | JavaScript |        131 |          2 |         19 |        152 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\ClubInterviewScreen.js       | JavaScript |        338 |          1 |         19 |        358 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\ClubPostScreen.js            | JavaScript |        538 |         32 |         19 |        589 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\ClubScreen.js                | JavaScript |        341 |          2 |         20 |        363 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\HomeScreen.js                | JavaScript |         55 |          4 |          7 |         66 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\ReviewPostScreen.js          | JavaScript |        511 |         30 |         22 |        563 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\SchoolPostScreen.js          | JavaScript |        860 |         33 |         20 |        913 |
+| c:\Coding\ratecollegeclubs\frontend\src\screens\SchoolScreen.js              | JavaScript |        256 |          2 |         14 |        272 |
+| c:\Coding\ratecollegeclubs\frontend\src\store.js                             | JavaScript |         23 |          0 |          2 |         25 |
+| c:\Coding\ratecollegeclubs\package-lock.json                                 | JSON       |      3,206 |          0 |          1 |      3,207 |
+| c:\Coding\ratecollegeclubs\package.json                                      | JSON       |         35 |          0 |          1 |         36 |
+| Total                                                                        |            |     25,978 |        354 |        500 |     26,832 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
